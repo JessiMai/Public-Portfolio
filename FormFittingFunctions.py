@@ -13,7 +13,7 @@ class FormFitting:
         if X==[]:
             X = list(range(len(Y)))
         maxY = max(Y)
-        
+        return maxY
         
     
         
