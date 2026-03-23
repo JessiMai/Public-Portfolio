@@ -23,16 +23,22 @@ class WindowFunctions:
         }
     
     def CreateGUI(self):
-        for i, widgetType in enumerate(widgetDict['widgetType']):
-            case widgetType:
-                match 'Button':
+        for i, widgetType in enumerate(self.widgetDict['widgetType']):
+            match widgetType:
+                case 'Button':
                     #create button
-                match 'EntryBox':
-                match 'ScrollBox':
-                match 'CheckBox':
-                match 'InfoBox':
-                match 'DropDownMenu':
-                match __:
+                    pass
+                case 'EntryBox':
+                    pass
+                case 'ScrollBox':
+                    pass
+                case 'CheckBox':
+                    pass
+                case 'InfoBox':
+                    pass
+                case 'DropDownMenu':
+                    pass
+                case __:
                     print('Who''s messing up my code?')
             
         
