@@ -5,17 +5,13 @@ import numpy as np
 import scipy as sp
 
 # Class
-class FormFitting:
-    def LorentzianFitting(self, Y, X=[]):
+class FormSimulating:
+    def LorentzianSim(self, Y, X=[]):
         if X==[]:
           X = list(range(len(Y)))
-        # These are placeholders!!!!
-        A = 1
-        x0 = np.mean(X) 
-        reflectionCoefficient = 1
 
-        L = A/B
-        B = 1 + ((X-x0)/(reflectionCoefficient/2))**2
+        # L = A/B
+        # B = 1 + ((x-x0)/(reflectionCoefficient/2))**2
         return A, x0, reflectionCoefficient
 
     def PeakFinding(self, Y, X=[]):
@@ -24,11 +20,13 @@ class FormFitting:
         maxY = max(Y)
         return maxY
     
-    def MonteCarlo(self, X, Y):
+    def MonteCarloSim(self, X, Y):
         #do the thing
+        print('sim')
             
-    def ClusterIdentification(self, X, Y):
+    def ClusterSim(self, X, Y):
         #do the thing
+        print('sim')
         
     
         
