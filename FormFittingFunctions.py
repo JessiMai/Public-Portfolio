@@ -9,10 +9,14 @@ class FormFitting:
     def LorentzianFitting(self, Y, X=[]):
         if X==[]:
           X = list(range(len(Y)))
+        # These are placeholders!!!!
+        A = 1
+        x0 = np.mean(X) 
+        reflectionCoefficient = 1
 
-    # L = A/B
-    # B = 1 + ((x-x0)/(reflectionCoefficient/2))**2
-    return A, x0, reflectionCoefficient
+        L = A/B
+        B = 1 + ((X-x0)/(reflectionCoefficient/2))**2
+        return A, x0, reflectionCoefficient
 
     def PeakFinding(self, Y, X=[]):
         if X==[]:
